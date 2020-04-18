@@ -1,0 +1,49 @@
+<%- include("partials/header") %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Sign Up</h1>
+        </div>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/register" method="POST">
+                <div class="form-group">
+                    <label for="">Username:</label>
+                    <input required class="form-control" type="text" name="username" placeholder="JohnDoe">
+                </div>
+                <div class="form-group">
+                    <label for="">Password:</label>
+                    <input required class="form-control" type="password" name="password" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <label for="">First Name:</label>
+                    <input required class="form-control" type="text" name="firstName" placeholder="John">
+                </div>
+                <div class="form-group">
+                    <label for="">Last Name:</label>
+                    <input required class="form-control" type="text" name="lastName" placeholder="Doe">
+                </div>
+                <div class="form-group">
+                    <label for="">Email:</label>
+                    <input required class="form-control" type="text" name="email" placeholder="johndoe@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="">Avatar url:</label>
+                    <input class="form-control" type="text" name="avatar" placeholder="avatar url">
+                </div>
+                <div class="form-group">
+                    <label for="">Admin Code:</label>
+                    <input class="form-control" type="text" name="adminCode" placeholder="Admin Code">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit</button>
+                </div>
+            </form>
+            <p class="text-center">Already have an account? <a class="LOGSIGN " href="/login">Log in here!</a></p>
+            <br>
+            <a class="go-back" href="/campgrounds">Go Back</a>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,249 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body{
+    background-color: slategrey;
+    margin-bottom: 60px;
+
+}
+
+#contact{
+    display: none;
+}
+
+#address{
+    display: none;
+}
+
+#header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#header p{
+    margin: 0;
+}
+
+#header span {
+    margin: 0;
+}
+
+#user-camps{
+    color: black;
+}
+
+#CG-list{
+    border: 2px solid black;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+#CG-none{
+    width: 100%;
+    margin-bottom: 80px;
+    font-size: 1.2rem;
+}
+
+#profile{
+    margin-top: 150px;
+}
+
+#review-card{
+    width: 400px;
+}
+
+h1.YC{
+    font-weight: 500;
+    color: white;
+}
+
+.YC {
+    margin: 0;
+    padding: 0px;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+
+
+.go-back{
+    color: black;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+/* scaling thumbnails for screen size on home page*/
+/* xs */
+@media (max-width: 575.98px) {
+    .card.CG img {
+        width: 100%;
+        height: 100%;
+    }
+    #search{
+        margin-top: 20px;
+    }
+    .profileContainer{
+        width: 100%;
+        
+    }
+}
+
+/* sm */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .card.CG  img {
+        width: 100%;
+        height: 180px;
+    }
+    #search{
+        margin-top: 20px;
+    }
+    .profileContainer{
+        width: 100%;
+        
+    }
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card.CG img {
+        width: 100%;
+        height: 120px;
+    }
+    #search{
+        margin-top: 20px;
+    }
+    .profileContainer{
+        width: 60%;
+        
+    }
+}
+
+/* lg */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card.CG img {
+        width: 100%;
+        height: 180px;
+    }
+    #search{
+        margin-top: 20px;
+    }
+    .profileContainer{
+        width: 50%;
+        
+    }
+}
+
+/* xl */
+@media (min-width: 1199.98px) {
+    .card.CG img {
+        width: 100%;
+        height: 180px;
+    }
+    #search{
+        margin-top: 20px;
+    }
+    .profileContainer{
+        width: 30%;
+        
+    }
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.fa-campground{
+    font-size: .8em;
+}
+
+.footer-bottom{
+    background-color: darkgrey;
+    color: black;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 12px;
+}
+
+.footer-bottom a{
+    color: black;
+}
+
+.jumbotron a{
+    margin-top: 10px;
+}
+
+.user-link{
+    color: black;
+}
+
+.selected{
+    color: white;
+    background-color: steelblue;
+}
+
+.avatarImg{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.card{
+    background-color: #FEF6EB;
+}
+
+.jumbotron-fluid{
+    background-position: 50%;
+    background-image: url(https://images.unsplash.com/photo-1552329818-e76f90cf422a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+    height: 400px;
+}
+
+.avatarFull{
+    height: 300px;
+    width: 320px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 300px;
+}
+
+.email{
+    color: ghostwhite;
+}
+
+.profileName{
+    font-weight: 500;
+}
+
+
+.CG-list-item{
+    background-color: dimgrey;
+}
+
+.LOGSIGN{
+    color: ghostwhite;
+}
+
+.checked {
+    color: orange;
+}

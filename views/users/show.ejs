@@ -1,0 +1,65 @@
+<%- include("../partials/header-profile") %>
+
+<div class="jumbotron jumbotron-fluid mb-0">
+    <div class="container">
+        
+    </div>
+</div>
+<img class="avatarFull mx-auto col-md-12 d-block img-fluid mb-2" src="<%= user.avatar %> " alt="user profile image">
+
+<!-- <div class="container float-right col-md-1 mb-1">
+    <div class="float-right">
+        <h1><%= user.username %>('s) campgrounds:</h1>
+        <ul id="CG-list" class="list-group">
+                <% campgrounds.forEach(function(campground){ %>
+                    <li class="list-group-item CG-list-item"><a id="user-camps" href="/campgrounds/<%= campground.id %>"><%= campground.name %></a></li>
+                <% }); %> 
+        </ul>
+    </div>
+</div> -->
+
+<div class="container text-center profileContainer col-md-12">
+    <div class="row">
+        <div id="profile" class="col-md-12">
+            <h1 class="display-3 profileName"><%= user.username %></h1>
+            <div class="thumbnail">
+                <div class="caption">
+                    <h4><%= user.firstName + " " + user.lastName %></h4> 
+                    <a class="email" href="mailto:<%= user.email %>"><%= user.email %></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-12">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos rem saepe veniam, minus facere placeat. Ipsam dolorum dolor provident a, tempore doloremque vitae architecto labore quae. Tempora quibusdam illo nihil.</p>
+        </div>
+    <br>
+        <div class="col-md-12">
+            <% if(currentUser && user._id.equals(currentUser._id)){ %>
+                <a data-confirm="Are you sure to delete this item?" class="btn btn-xs btn-warning" href="/users/<%= user._id %>/edit">EDIT</a>
+                <form class="delete-form" action="/users/<%= user._id %>?_method=DELETE" method="POST">
+                    <button onclick="return confirm('Are you sure you want to delete your account?');" id="myBtn" class="btn btn-xs btn-danger">DELETE</button>
+                </form>
+            
+            <% } %> 
+    </div>
+    <br>
+    <p><a class="go-back" href="/campgrounds">Go Back</a></p>
+</div>
+
+<div class="container float-md-right justify-content-center col-md-1 mb-1">
+    <div class="float-right">
+        <h1><%= user.username %>('s) campgrounds:</h1>
+        <% if(campgrounds.length < 1){ %>
+            <p id="CG-none">No campgrounds by this user</p>
+        <% }  else{ %>
+            <ul id="CG-list" class="list-group">
+                    <% campgrounds.forEach(function(campground){ %>
+                        <li class="list-group-item CG-list-item"><a id="user-camps" href="/campgrounds/<%= campground.id %>"><%= campground.name %></a></li>
+                    <% }); %> 
+            </ul>
+        <% } %>
+    </div>
+</div>
+
+<%- include("../partials/footer") %>

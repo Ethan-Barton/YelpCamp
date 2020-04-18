@@ -1,0 +1,28 @@
+<%- include("partials/header") %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Login</h1>
+        </div>
+        <div style="width: 30%; margin: 25px auto;">
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="">Username:</label>
+                    <input class="form-control" type="text" name="username" placeholder="JohnDoe">
+                </div>
+                <div class="form-group">
+                    <a class="float-right LOGSIGN" href="/forgot">Forgot password?</a>
+                    <label for="">Password: </label>
+                    <input class="form-control" type="password" name="password" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-lg btn-primary btn-block">Submit</button>
+                </div>
+            </form>
+            <p class="text-center">New to Yelpcamp? <a class="LOGSIGN" href="/register">Sign Up here!</a></p>
+            <a class="go-back" href="/campgrounds">Go Back</a>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") %>
