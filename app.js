@@ -28,7 +28,8 @@ mongoose.set("useNewUrlParser", true);
 mongoose.set("useCreateIndex", true);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useUnifiedTopology", true);
-mongoose.connect("mongodb://localhost/yelp_camp_v22");
+// mongoose.connect("mongodb://localhost/yelp_camp_v22");
+mongoose.connect("mongodb+srv://itzbige:<password>@cluster0-gh6wj.mongodb.net/test?retryWrites=true&w=majority");
 
 // app config
 app.use(bodyParser.urlencoded({extended: true}));
