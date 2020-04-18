@@ -29,7 +29,7 @@ mongoose.set("useCreateIndex", true);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useUnifiedTopology", true);
 // mongoose.connect("mongodb://localhost/yelp_camp_v22");
-mongoose.connect("mongodb+srv://itzbige:<process.env.DBUSERPW>@cluster0-gh6wj.mongodb.net/test?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://itzbige:<Tmmre123$!TX>@cluster0-gh6wj.mongodb.net/test?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useCreateIndex: true
 }).then(() => {
