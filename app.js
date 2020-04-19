@@ -10,6 +10,7 @@ const express        = require("express"),
       Campground     = require("./models/campground"),
       Comment        = require("./models/comment"),
       User           = require("./models/user"),
+      favicon        = require("serve-favicon"),
       SeedDB         = require("./seeds");
 
       
@@ -42,6 +43,7 @@ app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
 app.locals.moment = require("moment");
+app.use(favicon(__dirname + "/public/images/favicon.ico"));
 
 // PASSPORT CONFIG
 app.use(require("express-session")({
