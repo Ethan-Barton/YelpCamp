@@ -29,7 +29,7 @@ mongoose.set("useCreateIndex", true);
 mongoose.set("useFindAndModify", false);
 mongoose.set("useUnifiedTopology", true);
 // mongoose.connect("mongodb://localhost/yelp_camp_v22");
-mongoose.connect("mongodb+srv://itzbige:Tmmre123%24%21TX@cluster0-gh6wj.mongodb.net/test?retryWrites=true&w=majority").then(() => {
+mongoose.connect("mongodb+srv://itzbige:"+ process.env.DBUSERPW +"@cluster0-gh6wj.mongodb.net/test?retryWrites=true&w=majority").then(() => {
     console.log("connected to db!");
 }).catch(err => {
     console.log("ERROR", err.message);
