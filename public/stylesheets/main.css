@@ -127,9 +127,10 @@ h1.YC{
 }
 
 .jumbotron-fluid{
-    background-position: 50%;
-    background-image: url(https://images.unsplash.com/photo-1552329818-e76f90cf422a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+    background-repeat: no-repeat;
+    background-image: url(https://images.unsplash.com/photo-1503265192943-9d7eea6fc77a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80);
     height: 400px;
+    background-size: cover;
 }
 
 .avatarFull{
