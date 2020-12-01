@@ -99,9 +99,9 @@ router.post("/forgot", function(req, res, next) {
       },
       function(token, user, done) {
         var smtpTransport = nodemailer.createTransport({
-          service: "Gmail", 
+          service: "Yahoo", 
           auth: {
-            user: "barton.ethan.dev@gmail.com",
+            user: "barton.dev@Yahoo.com",
             pass: process.env.GMAILPW
           }
         });
@@ -165,9 +165,9 @@ router.post("/reset/:token", function(req, res) {
       },
       function(user, done) {
         var smtpTransport = nodemailer.createTransport({
-          service: "Gmail", 
+          service: "Yahoo", 
           auth: {
-            user: "barton.ethan.dev@gmail.com",
+            user: "barton.dev@yahoo.com",
             pass: process.env.GMAILPW
           }
         });
